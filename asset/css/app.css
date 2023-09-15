@@ -30,17 +30,16 @@ a {
 }
 .navCnd {
   display: flex;
-  gap:3rem;
+  gap: 3rem;
 }
-.navContn{
+.navContn {
   display: flex;
   gap: 1rem;
 }
-.navContn a{
+.navContn a {
   display: flex;
   justify-items: center;
   align-items: center;
-
 }
 .slctDiv {
   display: flex;
@@ -70,14 +69,16 @@ a {
 .navBtn img {
   padding-left: 10px;
 }
-@media only screen and (min-wight:760px) {
-  
+@media screen and (max-width: 780px) {
+  .navContn {
+    display: none;
+  }
 }
 
 /* hero */
-.heroImg{
-    border-radius: 10px;
-    padding-left: 2rem;
+.heroImg {
+  border-radius: 10px;
+  padding-left: 2rem;
 }
 .secHero {
   display: grid;
@@ -123,14 +124,50 @@ a {
   color: white;
   padding: 5px;
   border-radius: 6px;
-  border:1px solid #d27722;
+  border: 1px solid #d27722;
 }
 .heroBtnTwo {
   color: #d27722;
-  border:1px solid #d27722;
+  border: 1px solid #d27722;
   padding: 5px;
   border-radius: 5px;
   background-color: white;
+}
+@media screen and (max-width: 780px) {
+  .secHero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0%;
+  }
+  .hero {
+    display: grid;
+    justify-content: center;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    padding-right: 0%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .heroImg img {
+    width: 22rem;
+  }
+  .heroImg {
+    width: 25rem;
+    border-radius: 0rem;
+  }
+  .hero {
+    width: 25rem;
+    justify-items: center;
+    justify-content: center;
+  }
+  .secHero {
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+  }
 }
 
 /* rating */
@@ -161,126 +198,235 @@ a {
   font-size: small;
   text-align: center;
 }
+@media screen and (max-width: 780px) {
+  .rating {
+    gap: 2rem;
+  }
+  .rating div {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .rating {
+    gap: 2px;
+    display: inline-grid;
+  }
+  .rating div {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 /* veganDiv */
-.vagenDiv{
-    display: flex;
-    justify-content: center;
-    padding-left: 20rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+.vagenDiv {
+  display: flex;
+  justify-content: center;
+  padding-left: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
-.vagen{
-    display:inline-flex ;
-    justify-content: center;
-    border:1px  solid #FFDBB8;
-    border-radius: 10px;
-    width: 20rem;
-    padding: 1rem;
+.vagen {
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid #ffdbb8;
+  border-radius: 10px;
+  width: 20rem;
+  padding: 1rem;
 }
-.vagenCnt{
+.vagenCnt {
   padding-left: 1rem;
+}
+@media screen and (max-width: 780px) {
+  .vagenDiv {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .vagenDiv {
+    display: none;
+  }
 }
 
 /* explore */
-.explore{
+.explore {
   padding: 1% 5% 1% 5%;
+  display: grid;
+  justify-content: center;
 }
-.expDiv{
+.expDiv {
   display: flex;
   justify-content: space-between;
-  padding-bottom:3rem ;
+  padding-bottom: 3rem;
 }
-.expTittle{
+.expTittle {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.expTittle h1{
+.expTittle h1 {
   font-size: 50px;
 }
-.expSearch{
+.expSearch {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-
-.expCntDiv{
-  display: flex;
-  padding: 1% 5% 1% 5%;
-  justify-content:space-between;
-
- padding-bottom: 2rem;
-}
-.expCntdetail{
-  display:inline-flex ;
+.expCntdetail {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  border:1px  solid #FFDBB8;
+  border: 1px solid #ffdbb8;
   border-radius: 10px;
   width: 28rem;
   padding: 1rem;
   gap: 1rem;
 }
-
-
-
-
-
-
-
-
+.foodCard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+}
+@media screen and (max-width: 780px) {
+  .expSearch {
+    display: none;
+  }
+  .expTittle {
+    padding-top: 3rem;
+  }
+  .expDiv {
+    display: flex;
+    justify-content: center;
+  }
+  .expCntdetail {
+    width: auto;
+  }
+  .foodCard {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .expSearch {
+    display: none;
+  }
+  .expDiv p {
+    display: none;
+  }
+  .expTittle h1 {
+    font-size: 43px;
+  }
+  .foodCard {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+}
 
 /* footer */
-.footer{
-  display:flex;
-  justify-content:space-around;
+.footer {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-
 }
-.ftrDiv{
-background-color: #d27722;
-display:flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-padding-left: 6rem;
-padding-right: 6rem;
-border-radius: 10px;
+.ftrDiv {
+  background-color: #d27722;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border-radius: 10px;
 }
-.ftrDivCnt{
+.ftrDivCnt {
   display: flex;
 }
-.ftrLogo h1{
+.ftrLogo h1 {
   font-size: 56px;
   font-weight: 700;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-  color: #FFDBB8;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffdbb8;
 }
-.ftrLogo{
+.ftrLogo {
   display: flex;
   align-items: center;
   padding: 1rem;
 }
-.ftrLing{
+.ftrLing {
   display: flex;
   gap: 17rem;
   padding: 3rem;
   line-height: 2rem;
 }
-.ftrLing div a{
-  color: #FFDBB8;
+.ftrLing div a {
+  color: #ffdbb8;
 }
 
-.ftrSmId{
+.ftrSmId {
   display: flex;
   gap: 1rem;
   padding-top: 1rem;
 }
-.copyRight{
+.copyRight {
   display: flex;
   justify-content: end;
   align-items: end;
   padding-left: 5rem;
-
+}
+.cpySimble {
+  display: none;
+  color: #ffdbb8;
+  padding-bottom: 1rem;
+}
+.ftrcook {
+  display: flex;
+  gap: 3rem;
+}
+@media screen and (max-width: 780px) {
+  .ftrDivCnt {
+    display: flex;
+    flex-direction: column;
+  }
+  .ftrLing {
+    gap: 2rem;
+  }
+  .copyRight {
+    display: none;
+  }
+  .cpySimble {
+    display: flex;
+  }
+  .ftrcook {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ftrLogo {
+    display: flex;
+    align-items: center;
+    padding-top: 6rem;
+    justify-content: center;
+  }
+  .ftrDivCnt {
+    display: block;
+  }
+  .ftrLing {
+    display: block;
+    gap: 2rem;
+  }
+  .copyRight {
+    display: none;
+  }
+  .cpySimble {
+    display: flex;
+  }
+  .ftrcook {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

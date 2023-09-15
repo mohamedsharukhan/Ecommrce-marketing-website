@@ -1,0 +1,286 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* nav */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 38px;
+  font-size: 21px;
+  color: #d27722;
+  font-size: 700;
+}
+.logo h1 {
+  padding-right: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem 2rem 4rem;
+}
+.navCnd {
+  display: flex;
+  gap:3rem;
+}
+.navContn{
+  display: flex;
+  gap: 1rem;
+}
+.navContn a{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+}
+.slctDiv {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.select {
+  color: #d27722;
+  border: none;
+}
+
+.info a {
+  text-decoration: none;
+  text-align: center;
+}
+.navBtn {
+  padding-left: 10px;
+}
+.navBtn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px 5px 15px;
+  background-color: #d27722;
+  border-radius: 5%;
+}
+.navBtn img {
+  padding-left: 10px;
+}
+@media only screen and (min-wight:760px) {
+  
+}
+
+/* hero */
+.heroImg{
+    border-radius: 10px;
+    padding-left: 2rem;
+}
+.secHero {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 7rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  padding-right: 22rem;
+}
+.hero p {
+  padding-top: 1rem;
+}
+.Pacifico {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Pacifico", cursive;
+  color: #d27722;
+}
+.heroVd {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 1rem;
+}
+.heroVd a {
+  display: flex;
+}
+.heroBtn {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.heroBtnOne {
+  background-color: #d27722;
+  color: white;
+}
+.heroBtnOne {
+  background-color: #d27722;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  border:1px solid #d27722;
+}
+.heroBtnTwo {
+  color: #d27722;
+  border:1px solid #d27722;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* rating */
+.secRating {
+  display: flex;
+  justify-content: center;
+}
+.rating {
+  display: inline-flex;
+  justify-content: center;
+  gap: 15rem;
+  background-color: #fffdf4;
+  color: #d27722;
+  padding: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-style: solid;
+  border-color: #d27722;
+  border-width: 1px;
+  border-radius: 10px;
+}
+.rating h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.rating p {
+  color: black;
+  font-size: small;
+  text-align: center;
+}
+
+/* veganDiv */
+.vagenDiv{
+    display: flex;
+    justify-content: center;
+    padding-left: 20rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.vagen{
+    display:inline-flex ;
+    justify-content: center;
+    border:1px  solid #FFDBB8;
+    border-radius: 10px;
+    width: 20rem;
+    padding: 1rem;
+}
+.vagenCnt{
+  padding-left: 1rem;
+}
+
+/* explore */
+.explore{
+  padding: 1% 5% 1% 5%;
+}
+.expDiv{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:3rem ;
+}
+.expTittle{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.expTittle h1{
+  font-size: 50px;
+}
+.expSearch{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.expCntDiv{
+  display: flex;
+  padding: 1% 5% 1% 5%;
+  justify-content:space-between;
+
+ padding-bottom: 2rem;
+}
+.expCntdetail{
+  display:inline-flex ;
+  justify-content: center;
+  align-items: center;
+  border:1px  solid #FFDBB8;
+  border-radius: 10px;
+  width: 28rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer{
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+
+}
+.ftrDiv{
+background-color: #d27722;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+padding-left: 6rem;
+padding-right: 6rem;
+border-radius: 10px;
+}
+.ftrDivCnt{
+  display: flex;
+}
+.ftrLogo h1{
+  font-size: 56px;
+  font-weight: 700;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  color: #FFDBB8;
+}
+.ftrLogo{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.ftrLing{
+  display: flex;
+  gap: 17rem;
+  padding: 3rem;
+  line-height: 2rem;
+}
+.ftrLing div a{
+  color: #FFDBB8;
+}
+
+.ftrSmId{
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.copyRight{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-left: 5rem;
+
+}
